@@ -8,7 +8,7 @@ package message;
 // rpc MetotAdi(RequestedilecekDataTuru) return (ResponseEdilecekDataTuru)
 service Message {
   // Sends a greeting
-  rpc SendMessage (MessageRequest) returns (MessageResponse);
+  rpc SendMessage (stream MessageRequest) returns (stream MessageResponse);
 }
 
 // The request message containing the user's name.
